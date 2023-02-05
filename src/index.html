@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CharterOpsScheduler</title>
+    <script src="/main.js" defer></script>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <form name="route-form" action="" method="GET">
+        Starting Airport: 
+        <input type="text" id="starting-apt" maxlength="4" required="required"/><br>
+        Minimum Distance: 
+        <input id="min-dist" type="text" name="mindistance" required="required"/><br>
+        Maximum Distance:
+        <input id="max-dist" type="text" name="maxdistance" required="required"/><br>
+        Max Passengers:
+        <input id="max-pax" type="text" name="maxpax" required="required"/><br>
+        Max Legs:
+        <input id="max-legs" type="text" name="maxlegs" required="required"/><br>
+        <input id="route-btn" type="button" name="button" value="Generate Route"/>
+    </form>
+  </body>
+</html>
